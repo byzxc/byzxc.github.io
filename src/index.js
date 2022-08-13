@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// Get example class from App.js
-import Example from './App';
+// Get Website class from App.js
+import Website from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Example />
+    <Website />
   </React.StrictMode>
 );
 
