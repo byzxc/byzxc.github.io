@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // Get Website class from App.js
-import Website from './App';
+import BasicExample from './App';
 import reportWebVitals from './reportWebVitals';
+// css for react-bootstrap (Navbar)
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Website />
+    <BasicExample />
   </React.StrictMode>
 );
 
