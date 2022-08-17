@@ -1,15 +1,25 @@
 import "./App.css";
 import React from "react";
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Navbar, Nav /*, NavDropdown */ } from "react-bootstrap";
 
 function BasicExample() {
   return (
     <Navbar fixed="top-left" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Home</Navbar.Brand>
+        {/*Brand works like your Logo, so when user press on it, it should return back to homepage*/}
+        <a class="navbar-brand" href="#Home">
+          Home
+        </a>
         <Nav className="ms-auto">
-          <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link>
+          <a class="nav-link" href="#AboutMe">
+            About Me
+          </a>
+          <a class="nav-link" href="#Projects">
+            Projects
+          </a>
+          <a class="nav-link" href="#ContactMe">
+            Contact Me
+          </a>
         </Nav>
       </Container>
     </Navbar>

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// Get Website class from App.js
+// Get BasicExample class (Note: this is the main function) from App.js
 import BasicExample from './App';
 import reportWebVitals from './reportWebVitals';
 // css for react-bootstrap (Navbar)
