@@ -20,11 +20,18 @@
     font-size: larger!important;
   }
 */
-.navbar-nav .nav-link{
-  font-size:medium;
-}
-
-.navbar-brand{
+.navbar .navbar-brand{
   font-size: x-large!important;
   font-family: Open Sans;
+}
+
+ul.header li {
+  display: inline-block;
+}
+
+ul.header li a{
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
 }
