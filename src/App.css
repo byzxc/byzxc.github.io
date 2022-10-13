@@ -1,18 +1,27 @@
+/* CSS Syntax Guide
+Selector	            Example	          Example description
+#id	                  #firstname	      Selects the element with id="firstname"
+.class	              .intro	          Selects all elements with class="intro"
+element.class	        p.intro	          Selects only <p> elements with class="intro"
+*	                    *	                Selects all elements
+element	              p	                Selects all <p> elements
+element,element,..	  div, p	          Selects all <div> elements and all <p> elements
+*/
+
 /*Importing font library
   For italic 'https://fonts.googleapis.com/css?family=Open+Sans:italic'
 */
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 * {
-  font-family: 'Open+Sans', sans-serif;
-  }
+    font-family: 'Open+Sans', sans-serif;
+}
 
-/* Asterisk can select all elements of HTML*/
+/* Universal Selector/Asterisk can select all elements of HTML*/
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
 }
 
 /*Alternatively you can use !important to override CSS from bootstrap
@@ -20,18 +29,32 @@
     font-size: larger!important;
   }
 */
-.navbar .navbar-brand{
-  font-size: x-large!important;
-  font-family: Open Sans;
+.navbar .navbar-brand {
+    font-size: x-large !important;
+    font-family: Open Sans;
 }
 
 ul.header li {
-  display: inline-block;
+    display: inline-block;
 }
 
-ul.header li a{
-  color: #FFF;
-  text-decoration: none;
-  padding: 10px;
-  display: inline-block;
+ul.header li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
 }
+
+#homeimage {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+#home{
+  background-color: blue;
+}
+*/

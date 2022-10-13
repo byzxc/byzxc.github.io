@@ -1,11 +1,10 @@
-import React, { Component } from "react";
-import logo from './logo/test.png';
+import React from "react";
 
-class Home extends Component {
+class ContactMe extends React.Component {
   render() {
     return (
-      <div id="home">
-        <h2>Home</h2>
+      <div>
+        <h2>ContactMe</h2>
         <p>
           Cras facilisis urna ornare ex volutpat, et convallis erat elementum.
           Ut aliquam, ipsum vitae gravida suscipit, metus dui bibendum est, eget
@@ -13,11 +12,11 @@ class Home extends Component {
           molestie. Cum sociis natoque penatibus et magnis dis parturient
           montes, nascetur ridiculus mus.
         </p>
-        <img id="homeimage" alt="homeimage" src={logo} />
-        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>   
+
+        <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>
       </div>
     );
   }
 }
 
-export default Home;
+export default ContactMe;
