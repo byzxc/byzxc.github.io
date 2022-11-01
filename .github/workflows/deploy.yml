@@ -1,5 +1,5 @@
 # https://github.com/actions/checkout#push-a-commit-using-the-built-in-token
-name: Github Page Deploy Workflow
+name: Website Status
 
 on:
   push:
