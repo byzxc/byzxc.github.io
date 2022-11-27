@@ -5,6 +5,7 @@ class Home extends Component {
   render() {
     return (
       <div id="home">
+        <div class="background">
         <h2>Home</h2>
         <p>
           Cras facilisis urna ornare ex volutpat, et convallis erat elementum.
@@ -15,6 +16,7 @@ class Home extends Component {
         </p>
         <img id="homeimage" alt="homeimage" src={logo} />
         <p>Duis a turpis sed lacus dapibus elementum sed eu lectus.</p>   
+        </div>
       </div>
     );
   }
