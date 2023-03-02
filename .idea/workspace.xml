@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c16a0a93-6039-46c9-a6db-83cad1c54a67" name="Changes" comment="Added Card-Container, Card." />
+    <list default="true" id="c16a0a93-6039-46c9-a6db-83cad1c54a67" name="Changes" comment="fix: error:0308010C:digital envelope routines::unsupported">
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

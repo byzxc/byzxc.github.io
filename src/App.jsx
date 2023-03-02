@@ -70,7 +70,9 @@ class Main extends React.Component {
                         </div>
                     </div>
                 </div>
-
+                <p>
+                    test
+                </p>
                 {/* Footer */}
             </BrowserRouter>
         );
