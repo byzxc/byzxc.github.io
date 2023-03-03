@@ -1,11 +1,8 @@
 import React from "react";
-import {
-    Container,
-    Navbar,
-    NavbarBrand,
-} from "react-bootstrap";
-import {NavLink, BrowserRouter} from "react-router-dom";
+import {Container, Navbar, NavbarBrand,} from "react-bootstrap";
+import {BrowserRouter, NavLink} from "react-router-dom";
 import logo from "./Contents/logo/me.jpg";
+import react from "./Contents/logo/react.png";
 import classNames from 'classnames/bind';
 import styles from './App.scss';
 
@@ -56,23 +53,35 @@ class Main extends React.Component {
                             </div>
                         </div>
                         <div className={cx("my-card1")}>
-                            <img className="my-card__image" alt="me" src={logo}/>
-                            <p>
-                                Seeking a promising position, in the information & technology industry, that offers good
-                                opportunities for learning experiences, project developments, professional growth and
-                                career
-                                advancement.
-                            </p>
-                            <div className={cx("my-card__buttons")}>
-                                <a href="https://drive.google.com/file/d/1WDGgl2OGQ_cDxmD6amX-IUUqJI9PTa4L/view?usp=share_link">Resume</a>
-                                <a href="https://www.linkedin.com/in/darrenlinby/">LinkedIn</a>
+                            <div className={cx("my-card1__description")}>
+                                <h1>Frontend<br/>Development</h1>
+                                <p>
+                                    Seeking a promising position, in the information & technology industry, that offers
+                                    good
+                                    opportunities for learning experiences, project developments, professional growth
+                                    and
+                                    career
+                                    advancement.
+                                </p>
+                            </div>
+
+                            <div className={cx("my-card1__images")}>
+                                <div className={cx("image1")}>
+                                    <img alt="react" src={react}/>
+                                </div>
+                                <div className={cx("image1")}>
+                                    <img alt="react" src={react}/>
+                                </div>
+                                <div className={cx("image1")}>
+                                    <img alt="react" src={react}/>
+                                </div>
+                                <div className={cx("image1")}>
+                                    <img alt="react" src={react}/>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p>
-                    test
-                </p>
                 {/* Footer */}
             </BrowserRouter>
         );

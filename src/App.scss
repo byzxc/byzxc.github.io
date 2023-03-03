@@ -64,7 +64,7 @@ ul.header li a {
 .my-card__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 50px;
   margin-left: 5px;
 }
 
@@ -73,6 +73,7 @@ ul.header li a {
   height: 700px;
   border-radius: 10px;
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,170,233,1) 100%);
+
 
   .my-card__image {
     border-top-left-radius: 10px;
@@ -97,4 +98,31 @@ ul.header li a {
 
 .my-card1 {
   @extend .my-card;
+
+  .my-card1__description {
+    margin-left: 20px;
+    margin-top: 20px;
+    & > h1 {
+      font-weight: bold;
+    }
+  }
+
+  .my-card1__images{
+    display: flex;
+    gap: 10px;
+
+    .image1 {
+      height: 100px;
+      width: 100px;
+      background: white;
+      border-radius: 50%;
+      place-content: center;
+
+      & > img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
 }
