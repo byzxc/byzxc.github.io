@@ -46,18 +46,12 @@ ul.header li a {
   display: inline-block;
 }
 
-#homeimage {
-  display: block;
-  width: 50%;
-  height: 50%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .content {
   & > h1 {
     font-weight: bold;
-    padding: 4px;
+    font-size: 3rem;
+    padding: 5px;
+    text-align: center;
   }
 }
 
@@ -65,30 +59,36 @@ ul.header li a {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  margin-left: 5px;
+  margin-left: 10px;
+  justify-content: center;
 }
 
 .my-card {
   width: 400px;
-  height: 700px;
-  border-radius: 10px;
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,170,233,1) 100%);
-
-
-  .my-card__image {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-  }
+  height: 100%;
+  border-radius: 5%;
 
   & > p {
     padding: 4px;
     text-align: left;
     text-justify: inter-word;
   }
+}
+/* Card with profile photo */
+.my-card0 {
+  @extend .my-card;
 
+  & > h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: darkolivegreen;
+  }
+  .my-card__image {
+    border-radius: 5%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
   .my-card__buttons {
     display: flex;
     gap: 10px;
@@ -96,33 +96,60 @@ ul.header li a {
   }
 }
 
+@mixin h1size() {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+@mixin card-description() {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
 .my-card1 {
   @extend .my-card;
+  padding: 5px;
+  background: beige;
+  margin-top: 65px;
 
   .my-card1__description {
-    margin-left: 20px;
-    margin-top: 20px;
+    @include card-description();
+
     & > h1 {
-      font-weight: bold;
+      @include h1size();
     }
   }
 
   .my-card1__images{
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    place-content: center;
+    margin-bottom: 10px;
+    margin-top: 200px;
 
-    .image1 {
-      height: 100px;
-      width: 100px;
-      background: white;
-      border-radius: 50%;
-      place-content: center;
+    .image {
+      height: 80px;
+      width: 80px;
+      border-radius: 100%;
 
       & > img {
         max-width: 100%;
         max-height: 100%;
-        margin-top: 20px;
       }
     }
   }
+}
+
+.my-card2{
+  @extend .my-card1;
+
+  .my-card2__description {
+    @include card-description();
+
+    & > h1 {
+      @include h1size();
+    }
+  }
+
 }
