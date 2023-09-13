@@ -83,7 +83,6 @@ class Main extends React.Component {
                                 </div>
                             </div>
                         </div>
-
                         <div className={cx("my-card2")}>
                             <div className={cx("my-card2__description")}>
                                 <h1>Game<br/>Development</h1>
@@ -97,6 +96,23 @@ class Main extends React.Component {
                             </div>
                         </div>
                     </div>
+
+                    {/*<div className={cx("project-card__container")}>*/}
+                    {/*    <div className={cx("project-card0")}>*/}
+                    {/*        <h1>Traveller</h1>*/}
+                    {/*        <p>*/}
+                    {/*            <br></br>*/}
+                    {/*            As a Software Engineer, I possess a strong interest in discovering novel technologies*/}
+                    {/*            and possess a keen sense for automating processes. In addition, I take pleasure in*/}
+                    {/*            listening to music and engaging in gaming activities. I'm consistently seeking out*/}
+                    {/*            calming and comforting tunes.*/}
+                    {/*        </p>*/}
+                    {/*        <div className={cx("project-card__buttons")}>*/}
+                    {/*            <a href="https://drive.google.com/file/d/1WDGgl2OGQ_cDxmD6amX-IUUqJI9PTa4L/view?usp=share_link">Resume</a>*/}
+                    {/*            <a href="https://www.linkedin.com/in/darrenlinby/">LinkedIn</a>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
                 {/* Footer */}
             </BrowserRouter>

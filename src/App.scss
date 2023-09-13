@@ -74,6 +74,13 @@ ul.header li a {
     text-justify: inter-word;
   }
 }
+
+@mixin styleButton(){
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
 /* Card with profile photo */
 .my-card0 {
   @extend .my-card;
@@ -90,18 +97,16 @@ ul.header li a {
     object-fit: contain;
   }
   .my-card__buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: space-evenly;
+    @include styleButton();
   }
 }
 
-@mixin h1size() {
+@mixin bolded() {
     font-weight: bold;
     font-size: 2.5rem;
 }
 
-@mixin card-description() {
+@mixin cardDescription() {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 20px;
@@ -114,10 +119,10 @@ ul.header li a {
   margin-top: 65px;
 
   .my-card1__description {
-    @include card-description();
+    @include cardDescription();
 
     & > h1 {
-      @include h1size();
+      @include bolded();
     }
   }
 
@@ -145,11 +150,21 @@ ul.header li a {
   @extend .my-card1;
 
   .my-card2__description {
-    @include card-description();
+    @include cardDescription();
 
     & > h1 {
-      @include h1size();
+      @include bolded();
     }
   }
 
+}
+
+.project-card__container {
+  @extend .my-card;
+  display: flex;
+  flex-wrap: wrap;
+
+  .project-card__buttons {
+    @include styleButton();
+  }
 }
